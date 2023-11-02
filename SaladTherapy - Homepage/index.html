@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Salad Therapy</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+  <link href="https://cdn.jsdelivr.net/npm/modern-normalize@v2.0.0/modern-normalize.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Rubik:wght@700&display=swap" rel="stylesheet">
+  
+  <link rel="icon" href="assets/favicon.png">
+
+  <link rel="stylesheet" type="text/css" href="css/menu.css" />
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <link rel="stylesheet" type="text/css" href="css/marquee.css" />
+  <link rel="stylesheet" type="text/css" href="css/custom.css" />
+  <link rel="stylesheet" type="text/css" href="css/responsive.css" />
+  <link rel="stylesheet" type="text/css" href="css/fade-in.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" integrity="sha512-q3eWabyZPc1XTCmF+8/LuE1ozpg5xxn7iO89yfSOd5/oKvyqLngoNGsx8jq92Y8eXJ/IRxQbEC+FGSYxtk2oiw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <script src="js/fade-in.js" defer></script>
+  <script src="js/toggle-menu.js" defer></script>
+  <script src="js/functions.js" defer></script>
+</head>
+<body>
+  <div id="fadein"></div>
+  <header class="fixed">
+    <div id="header">
+      <div id="logo">
+        <a href="#">Salad <span class="logo-highlight">Therapy</span></a>
+      </div>
+      <nav class="nav" id="nav">
+        <a href="#menu-item-1" class="active">Home</a>
+        <a href="#menu-item-2">About Us</a>
+        <a href="#menu-item-3">Menu</a>
+        <a href="#menu-item-3">Reservation</a>
+        <a href="#menu-item-3">Contact Us</a>
+      </nav>
+      <a href="javascript:void(0);" id="menu-toggle" onclick="togglemenu()">
+          <div class="menu-toggle__bar1"></div>
+          <div class="menu-toggle__bar2"></div>
+          <div class="menu-toggle__bar3"></div>
+      </a>
+      <div class="search-container">
+        <a href="#">
+          <i class="material-icons round">search</i>
+        </a>
+      </div>
+  </div>
+  </header>
+
+  <main>
+<!-- HERO SECTION -->
+    <section id="hero">
+      <div class="row gap-3" margin-top="3em">
+        <div class="column col-2 vertical-align">
+          <h1>
+            Where <span class="primary-highlight">Freshness</span> 
+            <br/>Meets <span class="secondary-highlight">Flavor!</span>
+          </h1>
+          <p class="hero-caption">
+            We believe that a nutritious and delicious meal can be both comforing and invigorating. A haven for health conscious individuals who seek delightful culinary experience that’s also good for their bodies.
+          </p>
+          <div class="multibtn-container">
+            <a href="#" class="btn btn-slide">Discover Now</a>
+            <a href="#" class="btn btn-icon"><i class="material-icons round">play_arrow</i> Watch Video</a>
+          </div>
+        </div>
+        <div class="column col-2 vertical-align">
+          <div class="img-container" position="relative">
+            <img src="assets/featured-salad.webp">
+            <div class="img-tooltip">
+              <span>Special Menu<br/>& Free Delivery</span>
+              <div class="tooltip-pointer"></div>
+            </div>
+          </div>
+        </div>
+        <div class="decorative round"></div>
+      </div>
+    </section>
+
+<!-- 3-COLMUN SECTION -->
+    <section class="three-column-section">
+      <div class="row gap-3">
+        <div class="column col-3">
+          <div class="blurb">
+              <img class="img-icon" src="assets/natural-food.webp">
+              <div class="blurb-text">
+                <h3 class="title">Natural Food</h3>
+                <div class="btn-container">
+                  <i class="material-icons round">arrow_right_alt</i>
+                  <a href="#" class="btn btn-icon">Read More</a>
+                </div>
+              </div>
+          </div>
+        </div>
+        <div class="column col-3">
+          <div class="blurb">
+              <img class="img-icon" src="assets/biological-safe.webp">
+              <div class="blurb-text">
+                <h3 class="title">Biological Safe</h3>
+                <div class="btn-container">
+                  <i class="material-icons round">arrow_right_alt</i>
+                  <a href="#" class="btn btn-icon">Read More</a>
+                </div>
+              </div>
+          </div>
+        </div>
+        <div class="column col-3">
+          <div class="blurb">
+              <img class="img-icon" src="assets/improve-health.webp">
+              <div class="blurb-text">
+                <h3 class="title">Improve Health</h3>
+                <div class="btn-container">
+                  <i class="material-icons round">arrow_right_alt</i>
+                  <a href="#" class="btn btn-icon">Read More</a>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<!-- 2-COLMUN SECTION -->
+    <section id="about">
+       <div class="row">
+        <div class="column" max-width="800px" margin="0 auto" text-align="center">
+          <span class="subheading">About Us</span>
+          <h2>The Best Enjoyable <span class="inline-block">Place Around You.</span></h2>
+        </div>
+      </div>
+      <div class="row gap-5">
+        <div class="column col-2 vertical-align">
+          <p>Food as medicine should be for everyone. We're working hard to make our mission a reality so we've recently expanded our service to zip codes in 40+ state nationwide. Made with the perfect combination of nutirtion and culinary talent, each bowl you eat is crafted by your ultimate food dream.</p>
+          <div class="blurbs">
+            <div class="blurb">
+              <i class="material-icons round">done</i>
+              <div class="blurb-text">
+                <h3 class="title">Fresh Ingredients</h3>
+                <p class="description">Locally sourced, farm-to-farm table produce for maximum nutrition.</p>
+              </div>
+            </div>
+
+            <div class="blurb">
+              <i class="material-icons round">done</i>
+              <div class="blurb-text">
+                <h3 class="title">Fresh Ingredients</h3>
+                <p class="description">Locally sourced, farm-to-farm table produce for maximum nutrition.</p>
+              </div>
+            </div>
+
+            <div class="blurb">
+              <i class="material-icons round">done</i>
+              <div class="blurb-text">
+                <h3 class="title">Fresh Ingredients</h3>
+                <p class="description">Locally sourced, farm-to-farm table produce for maximum nutrition.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="column col-2 vertical-align">
+          <div class="img-container">
+            <img src="assets/about-salad.webp">
+          </div>
+          <div class="decorative shadow"></div>
+        </div>
+      </div>
+    </section>
+
+<!-- 2-COLMUN SECTION -->
+    <section id="chef">
+      <div class="row gap-2">
+        <div class="column col-2 vertical-align">
+          <div class="img-container chef-img">
+            <img src="assets/chef.webp">
+          </div>
+          <div class="decorative background"></div>
+        </div>
+
+        <div class="column col-2 vertical-align" z-index="20">
+          <span class="subheading" color="var(--color-secondary)" text-align="left" z-index="40">Our Chef</span>
+          <h2 z-index="40">Our Expert Chefs Provide Best Food Experience.</h2>
+          <p z-index="40">Passionate about blending flavors and creating culinary masterpieces, Chef Emily Martinez is the creative force behind the sensational dishes at Salad Therapy. With a dedication to crafting meals that are both nourishing and delectable, Chef Emily has an exceptional talent for turning fresh, locally sourced ingredients into culinary works of art.</p>
+          <div class="btn-container" z-index="40">
+            <a href="#" class="btn btn-slide">Discover Chef</a>
+          </div>
+          <div class="img-container leaves-img">
+            <img src="assets/leaves.webp">
+          </div>
+        </div>
+      </div>
+    </section>
+
+<!-- 3-COLMUN SECTION -->
+    <section id="blogs">
+      <div class="row">
+        <div class="column">
+          <span class="subheading text-left" color="var(--color-secondary)">Read Our Blogs</span>
+          <h2>Tips & Articles to Grow</h2>
+        </div>
+      </div>
+      <div class="row gap-3">
+        <div class="column col-3">
+          <div class="img-container text-img">
+            <img src="assets/blog1.webp">
+            <p>Reasons why you should <span class="block">choose organic</span></p>
+          </div>
+        </div>
+        <div class="column col-3">
+          <div class="img-container text-img">
+            <img src="assets/blog2.webp">
+            <p>Enjoy your life with <span class="block">healthy body</span></p>
+          </div>
+        </div>
+        <div class="column col-3">
+          <div class="img-container text-img">
+            <img src="assets/blog3.webp">
+            <p>Health Benefits of a <span class="block">Raw Food</span></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="partners">
+      <div class="row">
+        <div class="column">
+          <span class="subheading text-center" color="var(--color-secondary)">Our Partners</span>
+          <h2 class="text-center">Local Farmers & Suppliers</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="column">
+          <div class="marquee">
+            <ul class="marquee__content">
+              <li><img src="assets/logo1.webp"></li>
+              <li><img src="assets/logo2.webp"></li>
+              <li><img src="assets/logo3.webp"></li>
+              <li><img src="assets/logo4.webp"></li>
+              <li><img src="assets/logo5.webp"></li>
+            </ul>
+
+            <ul aria-hidden="true" class="marquee__content">
+              <li><img src="assets/logo1.webp"></li>
+              <li><img src="assets/logo2.webp"></li>
+              <li><img src="assets/logo3.webp"></li>
+              <li><img src="assets/logo4.webp"></li>
+              <li><img src="assets/logo5.webp"></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer background-color="var(--color-accent)">
+    <div class="row gap-3" padding="5.5em 0">
+
+      <div class="column col-4">
+        <div id="footer-logo">
+          <a href="#">Salad <span class="logo-highlight">Therapy</span></a>
+          <p class="footer-caption">
+            Embrace the goodness of Salad Therapy, where each bite is a step towards a healthier you.
+           </p>
+        </div>
+      </div>
+
+      <div class="column col-4">
+        <div class="col2-div">
+          <p><strong>Email</strong></p>
+          <a href="mailto:info@saladtherapy.com">info@saladtherapy.com</a>
+          <p margin-bottom="1em"></p>
+          <p><strong>Hours:</strong></p>
+          <p>Sunday-Saturday | <span class="inline-block">7am-8pm</span></p>
+        </div>
+      </div>
+
+      <div class="column col-4">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Menu</a></li>
+          <li><a href="#">Reservation</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <div class="column col-4">
+        <ul>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms & Condition</a></li>
+          <li><a href="#">Kitchen Policy</a></li>
+          <li><a href="#">Cancelation Policy</a></li>
+          <li><a href="#">FAQ</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </footer>
+
+  <footer class="footer-bottom">
+    <div class="row" padding="1em 0">
+      <div class="column col-2">
+        <p color="var(--color-white)" margin-bottom="0">© 2023 Your company name. <span class="inline-block">All Rights Reserved.</span></p>
+      </div>
+      <div class="column col-2">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

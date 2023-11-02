@@ -1,0 +1,204 @@
+/*.column { border: 1px solid; }*/
+
+@media only screen and (max-width: 1366px) {
+	header #header, section .row, footer .row {
+	  max-width: 90%;
+	}
+	section.three-column-section .blurb {
+		flex-direction: column;
+	}
+	section.three-column-section .blurb .blurb-text {
+		text-align: center;
+	}
+}
+
+@media only screen and (max-width: 992px) {
+	h1 { font-size: var(--h1-fs-tablet); font-weight: 700; }
+	h2 { font-size: var(--h2-fs-tablet); font-weight: 700; }
+	#logo a, #logo a .logo-highlight { font-size: 4vw; }
+	.row { flex-direction: column; 	}
+	.column.col-2 { width: 100%; }
+	.row:has(.column.col-4) { flex-direction: row; flex-wrap: wrap; }
+	.column.col-4 { display: flex; flex-basis: 50%; }
+	.img-container img { background: transparent; }
+
+	#header #logo {
+	    flex: 3;
+	}
+	#hero h1, #hero .hero-caption {
+		text-align: center;
+	}
+	#hero .multibtn-container {
+		justify-content: center;
+	}
+
+	#hero .decorative.round {
+	    scale: 4;
+	}
+
+	section.three-column-section .column {
+		margin: 0 auto;
+		max-width: 500px;
+	}
+
+	section.three-column-section .blurb {
+		flex-direction: row;
+	}
+	section.three-column-section .blurb .blurb-text {
+		text-align: left;
+	}
+	section#about {
+	    padding-bottom: 3em;	
+	}
+	section#about .row {
+		gap: 2em;
+	}
+	section#about .column p {
+		text-align: center;
+	}
+	section#about .blurbs {
+		max-width: 100%;
+	}
+	section#about .blurb {
+		justify-content: center;
+	}
+	section#about .decorative.shadow {
+		bottom: -11em;
+	    right: 11em;
+	    scale: 2.1;
+	}
+	section#chef {
+		padding-top: 0;
+	}
+	#chef .decorative.background {
+		top: -5em;
+	    left: -5em;
+	    z-index: 1;
+	    clip-path: circle(100%);
+	    border-radius: 50%;
+	    opacity: 0.2;
+	    scale: 1.2;
+	}
+	.chef-img {
+	    display: none;
+	}
+	.leaves-img {
+	    text-align: right;
+	}
+	.leaves-img img {
+	    width: 80%;
+	}
+	section#blogs .row:nth-of-type(2) {
+    	align-items: center;
+	}
+	section#blogs .col-3 {
+		max-width: 70%;
+	}
+	section#blogs .block {
+		display: inline-block;
+	}
+	section#blogs span,
+	section#blogs h2 {
+		text-align: center;
+	}
+
+	footer .col-4:nth-child(3) {
+		justify-content: flex-start;
+	}
+	footer .col-4:nth-child(2),
+	footer .col-4:nth-child(4) {
+		justify-content: flex-start;
+	}
+		#footer-logo a, #footer-logo span {
+	    font-size: 4.5vw;
+	}
+	.footer-bottom .row {
+		flex-direction: row;
+	}
+	.footer-bottom .col-2:nth-child(1) {
+		width: 65%;
+	}
+	.footer-bottom .col-2:nth-child(2) {
+		width: 35%;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	h1 { font-size: var(--h1-fs-mobile); font-weight: 700; }
+	h2 { font-size: var(--h2-fs-mobile); font-weight: 700; }
+	a, a:visited, p { font-size: 1em;}
+	#logo a, #logo a .logo-highlight { font-size: 2rem; line-height: 2rem; }
+	.column.col-4 { flex-basis: 100%; display: block; }
+	.row:has(.column.col-4) { flex-direction: column; }
+
+	#header #logo {
+	    flex: 10;
+	}
+	#chef .decorative.background {
+	    scale: 1;
+	}
+	section#blogs .col-3 {
+		max-width: 100%;
+	}
+
+	footer .col-4:nth-child(3),
+	footer .col-4:nth-child(2),
+	footer .col-4:nth-child(4),
+	footer .col2-div {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+	footer p, footer a, footer span, footer ul {
+		text-align: center;
+	}
+	#footer-logo a, #footer-logo span {
+	    font-size: 3rem;
+	}
+
+	.footer-bottom .row {
+		flex-direction: column;
+		gap: 1em;
+	}
+	.footer-bottom .col-2:nth-child(1),
+	.footer-bottom .col-2:nth-child(2) {
+		width: 100%;
+	}
+	.footer-bottom .column:nth-child(1) p {
+		text-align: center;
+	}
+	.footer-bottom .column:nth-child(2) {
+		justify-content: center;
+	}
+
+}
+
+@media only screen and (max-width: 480px) {
+
+	#logo a, #logo a .logo-highlight {
+	    font-size: 1.5rem;
+	}
+
+	.multibtn-container {
+		flex-direction: column;
+	}
+	section.gap-1, .row.gap-1 { gap: 1vh; }
+	section.gap-2, .row.gap-2 { gap: 2vh; }
+	section.gap-3, .row.gap-3 { gap: 3vh; }
+	section.gap-4, .row.gap-4 { gap: 4vh; }
+	section.gap-5, .row.gap-5 { gap: 5vh; }
+
+	.subheading {
+	    font-size: 1.2em;
+	    margin-bottom: 0.5em;
+	}
+
+	.marquee, .marquee__content {
+		gap: 1rem;
+		padding: 0;
+	}
+
+	#footer-logo a, #footer-logo span {
+	    font-size: 2.5rem;
+	}
+}
